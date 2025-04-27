@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect 4</title>
+    <link rel="stylesheet" href="connect4.css" />
+    <script src="connect4.js" defer></script>
+</head>
+
+<body>
+    <!-- =============================
+     Meniu de Start
+================================= -->
+    <div id="menu">
+        <h1>Connect 4 - Start Menu</h1>
+        <label>Player 1 Color:
+            <input type="color" id="player1Color" value="#ff0000">
+        </label>
+        <label>Player 2 Color:
+            <input type="color" id="player2Color" value="#ffff00">
+        </label>
+        <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- =============================
+       Jocul propriu-zis
+  ================================= -->
+    <div id="game" style="display:none; flex-direction: column; align-items: center;">
+        <h1>Connect 4</h1>
+        <div id="status">Player 1's Turn</div>
+        <div id="board"></div>
+        <button onclick="restartGame()">Restart</button>
+    </div>
+</body>
+
+</html>
